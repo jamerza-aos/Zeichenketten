@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>Zeichenkettentrennungsapp</h1>
+    <main>
+        <section>
+            <form action="">
+                <label for="text1">Zu trennende Zeichenkette:</label>
+                <br>
+                <br>
+            <input type="text" name="text1" id="input1" >
+                <br>
+                <br>
+                <label for="text2">Zeichenkette für die Trennungspsoition:</label>
+                <br>
+                <br>
+                <input type="text" name="text1" id="input2" >
+                <br>
+                <br>
+
+            <input type="radio" name="trennenradio" id="davor" value="davor trennen" >
+                <label for="davor-radio">davor trennen</label><br>
+            <input type="radio" name="trennenradio" id="danach" value="danach trennen"checked>
+                <label for="danach-radio">danach trennen</label><br>
+
+                <br>
+                <br>
+
+                <input type="button" value="Trennen" onclick="trennen()">
+            </form>
+        </section>
+
+<h2 >Ausgabe:</h2>
+    <div  id="demo">
+        <p>Vorderer teil:</p>
+        <p  id="vordemo"></p>
+    </div>
+
+    <div id="demo">
+        <p >Hinterer teil:</p>
+        <p id="hinterdemo1"></p>
+    </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
